@@ -222,7 +222,7 @@ border-radius: 100px;
 #menu li
 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-weight: 400;
@@ -355,23 +355,27 @@ opacity: 0.5;
 }
 
 .img-02{
-  width: 230px;
+height: 300px;
 }
 
 .dot{
   margin: 1rem;
   width: 15px;
   height: 15px;
-  background-color: aliceblue;
-  color: aliceblue;
+  background-color: #9599956b;
+  
   border-radius: 100px;
 }
 
 
+
+.dot:hover{
+  background-color: #ffffff;
+}
+
 .text-02{
   display: grid;
   text-align: center;
-  /* grid-gap: 20px; */
 }
 
 .heading-02-02{
