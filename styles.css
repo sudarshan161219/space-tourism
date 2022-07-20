@@ -1,0 +1,385 @@
+:root {
+    --color-DarkBlueintroandemailsignupbackground: hsl(217, 28%, 15%);
+    --color-DarkBlueMainBackground: hsl(218, 28%, 13%);
+    --color-DarkBlueFooterBackground: hsl(216, 53%, 9%);
+    --color-DarkBlueTestimonialsBackground: hsl(219, 30%, 18%);
+    --color-CyanInsideCall-To-ActionGradient: hsl(176, 68%, 64%);
+    --color-BlueInsideCall-to-ActionGradient: hsl(198, 60%, 50%);
+    --color-LightRederror: hsl(0, 100%, 63%);
+    --color-White: hsl(0, 0%, 100%);
+    --color--clr: hsl(0, 0%, 100%);
+    --color-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  *, *::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1.5rem 1rem;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2{
+    color: var(--color-White);
+  font-family: 'Bellefair', serif; 
+    font-weight: 400;
+    font-size:5rem ;
+  }
+
+
+
+  p, h1, h3{
+    color: #CFD2CF;
+     font-family: 'Barlow Condensed', sans-serif;
+     font-size: 1.1rem;
+     word-spacing: 2px;
+     font-weight: 400;
+     line-height: 1.5;
+     letter-spacing: 1.5px;
+  }
+
+  h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+  
+  }
+
+h3{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color:hsl(218, 28%, 13%);
+  font-weight: 500;
+}
+
+
+.two-divs{
+  display: grid;
+  grid-gap: 90px;
+}
+
+  .text-content{
+    display: grid;
+margin-top: 3rem;
+    justify-items: center;
+    text-align: center;
+    grid-gap: 20px;
+  }
+
+  .circle-box{
+    display: grid;
+    justify-content: center;
+  }
+
+  .circle{
+display: grid;
+justify-content: center;
+align-items: center;
+width: 170px;
+height: 170px;
+background-color: aliceblue;
+border-radius: 100px;
+  }
+
+
+
+  #menuToggle
+{
+  display: block;
+  position: relative;
+  /* top: 50px; */
+  /* left: 50px; */
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color:var(--color--clr);
+
+
+  transition: color 0.3s ease;
+}
+
+/* #menuToggle a:hover
+{
+  color: tomato;
+} */
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  /* cursor: pointer; */
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 6px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #cdcdcd;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  margin: -100px 0 0 -190px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: rgba(255,255,255,.05);
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(200%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* destination */
+
+.two-divs-01, .info{
+  display: grid;
+  grid-gap: 20px;
+}
+
+.info{
+  grid-gap: 30px;
+}
+
+.content-01{
+  display: grid;
+  margin-top: 3rem;
+  justify-items: center;
+  text-align: center;
+  grid-gap: 50px;
+}
+
+.num1{
+  color:darkgrey;
+}
+
+.heading-01{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.img-01{
+  width: 200px;
+}
+
+.nav-01{
+  display: flex;
+  justify-content: space-evenly;
+  color: #CFD2CF;
+  list-style-type: none;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.li-01{
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #CFD2CF;
+  display: inline-block;
+  position: relative;
+}
+
+
+
+.li-01:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color:  #CFD2CF;;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.li-01:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.heading-02-01{
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+
+
+.text-01{
+  display: grid;
+  text-align: center;
+  grid-gap: 20px;
+}
+
+hr{
+border: 1px solid  #CFD2CF;
+opacity: 0.5;
+
+}
+
+.stats{
+  display: grid;
+  grid-gap:20px ;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.stats-grid{
+  display: grid;
+  grid-gap:10px ;
+}
+
+.num, .num2{
+  font-size: 2rem;
+  color: var(--color-White);
+}
+
+
+/* crew */
+
+.nav-02{
+  display: flex;
+  justify-content: center;
+  color: #CFD2CF;
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+.img-02{
+  width: 230px;
+}
+
+.dot{
+  margin: 1rem;
+  width: 15px;
+  height: 15px;
+  background-color: aliceblue;
+  color: aliceblue;
+  border-radius: 100px;
+}
+
+
+.text-02{
+  display: grid;
+  text-align: center;
+  /* grid-gap: 20px; */
+}
+
+.heading-02-02{
+  color: #959995;
+  font-size: 2rem;
+}
+
+.p-02-02{
+  color: #CFD2CF;
+  font-size: 2.5rem;
+}
