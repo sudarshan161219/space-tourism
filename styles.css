@@ -27,7 +27,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 1.5rem 1rem;
   }
   
   nav{
@@ -66,6 +65,11 @@ h3{
   font-size: 1.5rem;
   color:hsl(218, 28%, 13%);
   font-weight: 500;
+}
+
+.conatiner{
+  position: relative;
+  margin: 1.5rem 1rem;
 }
 
 
@@ -198,31 +202,29 @@ border-radius: 100px;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-
-#menu
-{
+#menu {
+  padding: 5rem 1.5rem;
+  top: -41px;
+  /* right: 0; */
+  left: -217px;
+  /* z-index: 100; */
   position: absolute;
-  width: 300px;
+  width: 267px;
   height: 100vh;
-  margin: -100px 0 0 -190px;
-  padding: 50px;
-  padding-top: 125px;
 
   background: rgba(255,255,255,.05);
   -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px);
-
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(200%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
 #menu li
 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-weight: 400;
