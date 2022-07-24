@@ -107,8 +107,7 @@ border-radius: 100px;
 {
   display: block;
   position: relative;
-  /* top: 50px; */
-  /* left: 50px; */
+
   
   z-index: 1;
   
@@ -125,10 +124,6 @@ border-radius: 100px;
   transition: color 0.3s ease;
 }
 
-/* #menuToggle a:hover
-{
-  color: tomato;
-} */
 
 
 #menuToggle input
@@ -140,7 +135,7 @@ border-radius: 100px;
   top: -7px;
   left: -5px;
   
-  /* cursor: pointer; */
+
   
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
@@ -205,15 +200,12 @@ border-radius: 100px;
 #menu {
   padding: 5rem 1.5rem;
   top: -41px;
-  /* right: 0; */
   left: -217px;
-  /* z-index: 100; */
   position: absolute;
   width: 267px;
   height: 100vh;
-
   background: rgba(255,255,255,.05);
-  -webkit-backdrop-filter: blur(80px);
+  -webkit-backdrop-filter: blur(70px);
   backdrop-filter: blur(80px);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -365,7 +357,6 @@ height: 300px;
   width: 15px;
   height: 15px;
   background-color: #9599956b;
-  
   border-radius: 100px;
 }
 
@@ -388,4 +379,56 @@ height: 300px;
 .p-02-02{
   color: #CFD2CF;
   font-size: 2.5rem;
+}
+
+
+
+
+
+.img-03{
+  width: 100%;
+}
+
+.dot-one, .dot-two, .dot-three{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  border: 1px solid #CFD2CF;
+}
+
+.dot-one:hover, .dot-two:hover, .dot-three:hover{
+  background-color: #ffffff;
+  color: #000;
+}
+
+.number{
+  font-family: 'Bellefair', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-03{
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+
+}
+
+.tech-p1{
+    color: #ffff;
+  font-size: 1.5rem;
+  font-family: 'Bellefair', serif; 
+  text-transform: uppercase;
+}
+
+.tech-p2{
+  font-size: 1.2rem;
+}
+
+.tech-p{
+  text-transform: uppercase;
 }
