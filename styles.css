@@ -60,7 +60,8 @@
   
   }
 
-h3{
+h3, .circle-text{
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5rem;
   color:hsl(218, 28%, 13%);
@@ -80,7 +81,7 @@ h3{
 
   .text-content{
     display: grid;
-margin-top: 3rem;
+    margin-top: 3rem;
     justify-items: center;
     text-align: center;
     grid-gap: 20px;
@@ -103,25 +104,22 @@ border-radius: 100px;
 
 
 
-  #menuToggle
-{
+  #menuToggle{
+
   display: block;
   position: relative;
-
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
+
 }
 
-#menuToggle a
-{
+#menuToggle a{
+
   text-decoration: none;
   color:var(--color--clr);
-
-
   transition: color 0.3s ease;
+
 }
 
 
