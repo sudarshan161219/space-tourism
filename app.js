@@ -87,7 +87,6 @@ titan.addEventListener("click", ()=>{
 window.addEventListener("DOMContentLoaded", function(){
 
   showItem(currentItem)
-  showperson(currentItem)
   });
 
 
@@ -104,4 +103,15 @@ let currentItem  = 0
           num2.textContent =  data.travel
         }
 
-     
+       
+
+        let myAnimation=anime({
+          targets: '.img-01',
+          rotate:360,
+          borderRadius: 50,
+          duration: 5000,
+          easing: 'cubicBezier(.5, .05, .1, .3)',
+          direction: 'alternate',
+          loop:true
+    
+        });
