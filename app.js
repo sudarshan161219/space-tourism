@@ -109,9 +109,8 @@ let currentItem  = 0
           targets: '.img-01',
           rotate:360,
           borderRadius: 50,
-          duration: 5000,
-          easing: 'cubicBezier(.5, .05, .1, .3)',
-          direction: 'alternate',
+          duration: 50000,
+          easing: 'linear',          
           loop:true
     
         });
