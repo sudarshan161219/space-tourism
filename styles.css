@@ -338,6 +338,11 @@ opacity: 0.5;
 
 /* crew */
 
+.two-divs-02-02{
+  display: grid;
+  justify-content: center;
+}
+
 .nav-02{
   display: flex;
   justify-content: center;
@@ -378,8 +383,6 @@ height: 300px;
   color: #CFD2CF;
   font-size: 2.5rem;
 }
-
-
 
 
 
@@ -429,4 +432,133 @@ height: 300px;
 
 .tech-p{
   text-transform: uppercase;
+}
+
+.desktop-heading-02, .desktop-nav{
+  display: none;
+}
+
+@media (min-width:768px) {
+
+  .two-divs {
+    justify-content: center;
+}
+
+.text-content {
+  width: 500px;
+}
+
+  .mobile-nav, .heading-02{
+    display: none;
+  }
+
+  a{
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    /* padding: 0px 20px; */
+    color: var(--color--clr);
+  }
+
+  nav {
+    align-items: baseline;
+}
+
+
+
+.desktop-nav {
+    background-color: rgba(255,255,255,.05);
+    height: 100px;
+    display: grid;
+    align-content: center;
+    position: relative;
+    top: -24px;
+    left: 15px;
+    width: 430px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+ 
+.desktop-menu {
+  list-style-type: none;
+  display: flex;
+  column-gap: 40px;
+}
+  .content-01{
+    margin-top: 1rem;
+  }
+
+  .heading-01{
+    justify-self: left;
+  }
+
+  
+  .img-01{
+width: 300px;
+}
+
+.nav-01 {
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.two-divs-01, .info {
+  grid-gap: 40px;
+}
+
+.text-01 {
+  justify-self: center;
+  width: 500px;
+}
+
+.stats {
+  display: flex;
+  grid-gap: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hr-02{
+  display: none;
+}
+
+.two-divs-02-02{
+  display: grid;
+}
+
+.content-02{
+  order: 1;
+  display: grid;
+  margin-top: 3rem;
+  justify-items: center;
+  text-align: center;
+  grid-gap: 50px;
+}
+
+.img-02 {
+  height: 415px;
+  position: absolute;
+}
+
+.img-01{
+  order: 1;
+}
+
+.nav-02 {
+order: 1;
+}
+
+.desktop-heading-02{
+  display: block;
+}
+
+.text-02{
+    justify-self: center;
+    width: 500px;
+}
+
 }
