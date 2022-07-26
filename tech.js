@@ -41,14 +41,34 @@ const tech = [
     showitem(currentItem);
     });
 
+    var x = window.matchMedia("(min-width: 768px)")
+    // var y = window.matchMedia("(width: 320px)")
 
   function showitem(n){
     const data =  tech[n]
     techp1.textContent  = data.name
-    img3.src  = data.img.landscape
+    img3.src  = data.img.portrait
     techp2.textContent = data.desc
-    
+
+    if (x.matches) { 
+      document.body.style.img = img3.src  = data.img.landscape;
+      // location.reload()
+      window.location.hash = "reload";
+    } else{
+      document.body.style.img = img3.src  = data.img.portrait;
+      // location.reload()
+      window.location.hash = "reload";
+    }
+
+   
   }
+
+  // window.onload = function() {
+  //   if(!window.location.hash) {
+  //     window.location = window.location + '#loaded';
+  //     window.location.reload();
+  //   }
+  // }
 
   one.addEventListener("click", ()=>{
     if(currentItem <  tech.length -0){

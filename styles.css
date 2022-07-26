@@ -238,7 +238,7 @@ border-radius: 100px;
   grid-gap: 30px;
 }
 
-.content-01{
+.content-01, .content-02{
   display: grid;
   margin-top: 3rem;
   justify-items: center;
@@ -507,7 +507,7 @@ width: 300px;
 }
 
 .two-divs-01, .info {
-  grid-gap: 40px;
+  grid-gap: 15px;
 }
 
 .text-01 {
@@ -559,6 +559,10 @@ order: 1;
 .text-02{
     justify-self: center;
     width: 500px;
+}
+
+.text-03 {
+    margin-top: 2rem;
 }
 
 }
