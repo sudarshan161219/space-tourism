@@ -6,12 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-<link rel="stylesheet" href="styles.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Bellefair&display=swap" rel="stylesheet">
-
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Bellefair&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
   <title>Destination</title>
 
 
@@ -30,6 +30,14 @@
     }
   }
 
+  @media (min-width:1024px) {
+      body{
+      background-image: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  }
+
 </style>
 
 </head>
@@ -41,10 +49,10 @@
 
       <div class="desktop-nav">
         <ul class="desktop-menu">
-          <a href="index.html"><li> Home</li></a>
-          <a href="index01.html"><li> Destination</li></a>
-          <a href="index02.html"><li> Crew</li></a>
-          <a href="index03.html"><li> Technology</li></a>
+          <li> <a class="li-01-01 " href="index.html"><span class="desktop-num">00</span> Home</a></li>
+          <li> <a class="li-01-01 " href="index01.html"> <span class="desktop-num">01</span> Destination</a></li>
+          <li> <a class="li-01-01 " href="index02.html"><span class="desktop-num">02</span> Crew</a></li>
+          <li> <a class="li-01-01 " href="index03.html"><span class="desktop-num">03</span> Technology</a></li>
 
         </ul>
       </div>
@@ -75,18 +83,18 @@
       </div>
      
     </nav>
-
+    <h1 class="heading-01 desktop-heading"> <span class="num1" >03</span> Space launch 101</h1>
 <div class="two-divs-02">
 
-    <div class="content-01">
-      <h1 class="heading-01"> <span class="num1" >03</span> Space launch 101</h1>
+    <div class="content-01 ">
+      <h1 class="heading-01 mobile-heading"> <span class="num1" >03</span> Space launch 101</h1>
       <img class="img-03" src="" alt="imgg">
     
     </div>
   
 
 <div class="info-3">
-  <ul class="nav-02" >
+  <ul class="nav-03" >
     <li class=" dot-one one"> <span class="number"  href="#">1</span> </li>
     <li class=" dot-two two"> <span class="number"   href="#">2</span> </li>
     <li class=" dot-three three"> <span class="number"  href="#">3</span> </li>
