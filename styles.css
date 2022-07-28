@@ -132,12 +132,8 @@ border-radius: 100px;
   position: absolute;
   top: -7px;
   left: -5px;
-  
-
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+  opacity: 0; 
+  z-index: 2; 
   -webkit-touch-callout: none;
 }
 
@@ -180,9 +176,7 @@ border-radius: 100px;
   background: #cdcdcd;
 }
 
-/*
- * But let's hide the middle one.
- */
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -218,7 +212,7 @@ border-radius: 100px;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-weight: 400;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 
@@ -440,6 +434,7 @@ height: 300px;
 .tech-p{
   text-transform: uppercase;
 }
+
 
 .desktop-heading-02, .desktop-nav, .desktop-heading{
   display: none;
